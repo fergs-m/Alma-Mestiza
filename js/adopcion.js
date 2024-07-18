@@ -150,7 +150,7 @@ let arrayAbuelitos = [
       sexo: 'Sexo: Macho.',
       edad: 'Edad: 8 años.',
       url: '../img/perroa1x1200cd.webp',
-      descripcion: 'Barto es un perro dulce y leal, siempre dispuesto a ofrecer amor y compañía. Es paciente y gentil, por lo que se lleva bien con niños de todas las edades.'
+      descripcion: 'Lalo es un perro dulce y leal, siempre dispuesto a ofrecer amor y compañía. Es paciente y gentil, por lo que se lleva bien con niños de todas las edades.'
     },
 
     {  nombre: 'Nombre: Otto.',  
@@ -164,7 +164,7 @@ let arrayAbuelitos = [
       sexo: 'Sexo: Macho.',
       edad: 'Edad: 11 años.',
       url: '../img/perroa2x1200cd.webp',
-      descripcion: 'Willy tiene algunas canas y se muevo un poco más despacio, pero aún tiene mucho amor para dar. Tiene chequeos veterinarios regulares y sus controles están al día.'
+      descripcion: 'Willy tiene algunas canas y se mueve un poco más despacio, pero aún tiene mucho amor para dar. Tiene chequeos veterinarios regulares y sus controles están al día.'
     },
       
     { nombre: 'Nombre: Violeta.',

@@ -371,7 +371,7 @@ body {
 /*SECCIÓN INICIO*/
 .seccionInicio__contenedor {
     height: 85vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/heroImagex1500.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/heroimagex1500menos.webp);
 
     background-position: center;
     background-repeat: no-repeat;
@@ -436,7 +436,11 @@ body {
     
 }
 
-
+@media screen and (max-width: 440px) {
+    .seccionFormulario__modal {
+       top: 18%;   
+    }
+}
 @media screen and (max-width: 440px) {
     .seccionFormulario__modal {
        top: 15%;   
