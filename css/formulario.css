@@ -18,7 +18,7 @@
     /*Color del texto de pagina*/
     --colorfondo: #F2F2F4;
     /*Color del fondo de pagina*/
-    --verde: #6B914E;
+    --verde: #56763C;
     --rosado: #FFAAB1;
 }
 
@@ -416,6 +416,9 @@ body {
 /*SECCIÓN FORMULARIO*/
 .seccionFormulario{
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*Modal*/
 .seccionFormulario__modal {
@@ -506,8 +509,15 @@ body {
 .seccionFormulario__titulo{
     text-align: center;
     margin: 2rem 0;
-
 }
+
+@media screen and (max-width: 550px) {
+    .seccionFormulario__titulo{
+        width: 80%;
+        margin: 0;
+    }
+}
+
 .seccionFormulario__contenedor {
     width: 100%;
     display: flex;
@@ -524,6 +534,7 @@ body {
         flex-direction: column;
     }
 }
+
 
 .seccionFormulario__parrafos {
     width: 45%;
@@ -555,9 +566,19 @@ body {
         padding: 0;
     }
 }
+@media screen and (max-width: 3200px) {
+    .seccionFormulario__form {
+        padding: 1rem;
+    }
+}
 
 .seccionFormulario__lista {
     list-style-type: none;
+}
+@media screen and (max-width: 320px) {
+    .seccionFormulario__lista {
+        padding: 0;
+    }
 }
 
 .seccionFormulario__elementoLista {

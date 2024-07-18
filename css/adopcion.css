@@ -18,7 +18,7 @@
     /*Color del texto de pagina*/
     --colorfondo: #F2F2F4;
     /*Color del fondo de pagina*/
-    --verde: #6B914E;
+    --verde: #56763C;
     --rosado: #FFAAB1;
 }
 
@@ -384,15 +384,26 @@ body {
     font-size: 2.5rem;
 }
 
+@media screen and (max-width: 520px) {
+    .seccionAdopcionTexto__titulo{
+       text-align: center;
+       width: 80%;
+    }
+}
+
 .seccionAdopcionTexto__parrafo {
     width: 50%;
     color: var(--colorTexto);
     font-size: 1.1rem;
     text-align: center;
-
     padding: 1rem;
 }
 
+@media screen and (max-width: 520px) {
+    .seccionAdopcionTexto__parrafo{
+       width: 70%;
+    }
+}
 /*SECCIÓN CARDS ANIMALES*/
 
 /*Perros*/

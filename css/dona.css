@@ -18,7 +18,7 @@
     /*Color del texto de pagina*/
     --colorfondo: #F2F2F4;
     /*Color del fondo de pagina*/
-    --verde: #6B914E;
+    --verde: #56763C;
     --rosado: #FFAAB1;
 }
 
@@ -408,6 +408,7 @@ body {
 @media screen and (max-width: 830px) {
     .seccionDonacion__titulo {
         width: 80%;
+        text-align: center;
     }
 }
 
@@ -471,12 +472,29 @@ body {
     .seccionDonacion__contenedorPagar {
         width: 90%;
         font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .seccionDonacion__paypal {
     width: 100%;
     cursor: pointer;
+}
+@media screen and (max-width: 830px) {
+    .seccionDonacion__paypal  {
+        width: 23rem;
+        font-size: 1.3rem;
+        
+    }
+}
+@media screen and (max-width: 460px) {
+    .seccionDonacion__paypal  {
+        width: 15rem;
+        
+        
+    }
 }
 
 .seccionDonacion__tituloCard {
@@ -501,6 +519,7 @@ body {
     background-color: var(--verde);
     padding: 1rem;
     border-radius: 1rem;
+    border: 4px solid var(--colorTexto);
 }
 
 @media screen and (max-width: 730px) {
@@ -514,7 +533,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--colorTexto);
+    color: var(--colorfondo);
 }
 
 .seccionQueHacer__texto {

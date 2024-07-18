@@ -18,7 +18,7 @@
     /*Color del texto de pagina*/
     --colorfondo: #F2F2F4;
     /*Color del fondo de pagina*/
-    --verde: #6B914E;
+    --verde: #56763C;
     --rosado: #FFAAB1;
 }
 
@@ -425,7 +425,7 @@ body {
 .seccionSomos__contenedor {
     display: flex;
     width: 100%;
-    padding: 1.7rem 0;
+    padding: 0 0 1.5rem 0;
     gap: 1rem;
 }
 
@@ -434,6 +434,11 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.seccionSomos__tituloPrincipal{
+    text-align: center;
+    font-size: 1.7rem;
 }
 
 .seccionSomos__contenedorImagen {
@@ -557,6 +562,17 @@ body {
 
 }
 
+@media screen and (max-width: 576px) {
+    .seccionAdopcion  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
 /*Cards adopción*/
 .seccionAdopcion__conetendorCards {
 
@@ -622,13 +638,13 @@ body {
 .seccionAdopcion__titulo {
     text-align: center;
     padding: 0 0 0.6rem 0;
+    font-size: 1.7rem;
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 460px) {
     .seccionAdopcion__titulo {
-        width: 95%;
-        margin-left: 0.3rem;
+        width: 80%;   
     }
 
 }
@@ -644,6 +660,7 @@ body {
 .seccionPasos {
     /*Con esto se logra poner imagen detrás de texto*/
     height: 90vh;
+    padding: 2rem 0;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/patitas.webp);
     background-size: cover;
@@ -668,6 +685,11 @@ body {
     color: var(--colorfondo);
 
 }
+@media screen and (max-width: 920px) {
+    .seccionPasos__titulo{
+        width: 70%;
+    }
+}
 
 .seccionPasos__contenedor {
     display: flex;
@@ -681,6 +703,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        width: 90%;
     }
 
 }
@@ -706,7 +729,7 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .seccionPasos__conetnedorImagen {
         width: 80%;
     }
@@ -866,16 +889,10 @@ PREGUNTAR A JAVI PARA QUE APAREZCA BIEN Y CUADRO NO CREZCA*/
     text-decoration: none;
     color: var(--verde);
     margin: 1rem;
-    width: 10%;
     align-self: flex-end;
 
 }
 
-@media screen and (max-width: 440px) {
-    .seccionContacto__volver {
-        width: 30%;
-    }
-}
 
 /*FOOTER*/
 .footer {

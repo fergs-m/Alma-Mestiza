@@ -59,7 +59,7 @@
                 <li class="headerMovil__elemLista"> <a href="#nosotros" target="_self" class="headerMovil__link"
                         title="Nosotros responsive"> Nosotros <i class="fa-solid fa-users"></i></a> </li>
 
-                <li class="headerMovil__elemLista" id="ayudarCortina">Ayudanos <i class="fa-solid fa-heart"></i></i>
+                <li class="headerMovil__elemLista" id="ayudarCortina">Ayudanos <i class="fa-solid fa-heart"></i>
                     <!--AYUDANOS RESPONSIVE -->
 
                     <ol class="headerMovil__extraAyuda" id="olLiCortina"> <!--MENU DESPLEGABLE AYUDA-->
@@ -150,7 +150,7 @@
 
         <!--CARRUSEL DE IMAGENES-->
         <!--Carrusel contiene 3 imagenes que llevan a 3 archivos HTML diferentes-->
-        <section class="seccionImg">
+        <div class="seccionImg">
 
             <div class="seccionImg__carrusel">
 
@@ -166,17 +166,18 @@
                 </div>
 
                 <button type="button" class="seccionImg__botonDer" id="flechaDer"> <i
-                        class="fa-solid fa-arrow-right"></i></i> </button>
+                        class="fa-solid fa-arrow-right"></i> </button>
 
 
             </div>
 
-        </section>
+        </div>
 
         <!--QUIENES SOMOS-->
         <!--Sección que describe una pequeña parte de la fundación-->
         <section class="seccionSomos" id="nosotros">
 
+            <h2 class="seccionSomos__tituloPrincipal"> Un poco de nosotros <i class="fa-solid fa-shield-dog"></i></h2>
             <div class="seccionSomos__contenedor">
 
                 <div class="seccionSomos__contenedorImagen">
@@ -207,7 +208,7 @@
 
                     </article>
 
-                    <article class="seccionSomos__iconos">
+                    <div class="seccionSomos__iconos">
 
                         <p class="seccionSomos__iconosTexto"> Puedes seguirnos en nuestras RRSS! </p>
 
@@ -217,7 +218,7 @@
                             <img src="img/iconos/x-twitter.svg" alt="x-twitter" class="seccionSomos__iconosImagenRrss">
                         </div>
 
-                    </article>
+                    </div>
 
 
                 </div>
@@ -237,7 +238,7 @@
 
             <div class="seccionAdopcion__conetendorCards">
 
-                <article class="seccionAdopcion__cardPrincipal">
+                <div class="seccionAdopcion__cardPrincipal">
 
                     <div class="seccionAdopcion__cardTodo">
 
@@ -252,9 +253,9 @@
 
                     <p class="seccionAdopcion__parrafo"> Nuestros <strong> GATOS </strong> en adopción </p>
 
-                </article>
+                </div>
 
-                <article class="seccionAdopcion__cardPrincipal">
+                <div class="seccionAdopcion__cardPrincipal">
 
                     <div class="seccionAdopcion__cardTodo">
 
@@ -269,9 +270,9 @@
 
                     <p class="seccionAdopcion__parrafo"> Nuestros <strong> ABUELITOS </strong> en adopción </p>
 
-                </article>
+                </div>
 
-                <article class="seccionAdopcion__cardPrincipal">
+                <div class="seccionAdopcion__cardPrincipal">
 
                     <div class="seccionAdopcion__cardTodo">
 
@@ -286,7 +287,7 @@
 
                     <p class="seccionAdopcion__parrafo"> Nuestros <strong>PERROS </strong>en adopción </p>
 
-                </article>
+                </div>
 
             </div>
 
@@ -305,28 +306,28 @@
 
             <div class="seccionPasos__contenedor">
 
-                <article class="seccionPasos__conetnedorImagen">
+                <div class="seccionPasos__conetnedorImagen">
                     <img src="img/iconos/contactoBlanco.svg" alt="Contacto" class="seccionPaso__imagen" loading="lazy">
                     <p class="seccionPaso__parrafo"> 1. Contacto </p>
-                </article>
+                </div>
 
-                <article class="seccionPasos__conetnedorImagen">
+                <div class="seccionPasos__conetnedorImagen">
                     <img src="img/iconos/formularioBlanco.svg" alt="Cuestionario" class="seccionPaso__imagen"
                         loading="lazy">
                     <p class="seccionPaso__parrafo"> 2. Llenar formulario </p>
-                </article>
+                </div>
 
 
-                <article class="seccionPasos__conetnedorImagen">
+                <div class="seccionPasos__conetnedorImagen">
                     <img src="img/iconos/mensajeBlanco.svg" alt="Entrevista" class="seccionPaso__imagen" loading="lazy">
                     <p class="seccionPaso__parrafo"> 3. Entrevista</p>
-                </article>
+                </div>
 
-                <article class="seccionPasos__conetnedorImagen">
+                <div class="seccionPasos__conetnedorImagen">
                     <img src="img/iconos/contratoBlanco.svg" alt="Entrevista" class="seccionPaso__imagen"
                         loading="lazy">
                     <p class="seccionPaso__parrafo"> 4. Contrato </p>
-                </article>
+                </div>
 
             </div>
 
@@ -356,7 +357,7 @@
                     No dudes en hablarnos!.
                 </p>
 
-                <article class="seccionContacto__formulario">
+                <div class="seccionContacto__formulario">
 
                     <form name="Formulario contacto" action="#" method="get" id="formu"> <!--QUE PONGO EN ACTION?-->
 
@@ -392,11 +393,11 @@
 
                     </form>
 
-                </article>
+                </div>
 
             </div>
 
-            <a href="#inicio" class="seccionContacto__volver"> Volver inicio </a>
+            <a href="#inicio" class="seccionContacto__volver" title="Volver inicio"> Volver inicio </a>
 
         </section>
 
