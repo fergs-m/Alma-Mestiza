@@ -436,7 +436,7 @@ body {
     
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 800px) {
     .seccionFormulario__modal {
        top: 18%;   
     }
