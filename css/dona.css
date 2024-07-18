@@ -580,10 +580,11 @@ body {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 830px) {
     .footer__contenedorCuerpo {
         flex-direction: column;
         align-items: center;
+
     }
 }
 
@@ -618,11 +619,11 @@ body {
 }
 
 .footer__logo {
-    font-size: 1.7rem;
-    color: var(--colorfondo);
-    text-decoration: none;
+    font-size: 1.4rem;
     font-weight: bold;
     margin: 1rem;
+    color: var(--colorfondo);
+    text-decoration: none;
 }
 
 .footer__iconos {
@@ -630,6 +631,15 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     margin: 0 1rem;
+}
+@media screen and (max-width: 830px) {
+    .footer__iconos  {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 0.7rem 0;
+        width: 100%;
+
+    }
 }
 
 /*Segundo div*/
