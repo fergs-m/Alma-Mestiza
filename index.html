@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernanda Guerra">
+    <meta name="keywords" content="protectora, animales, adopcion, perros, gatos, senior, donar">
+    <meta name="description" content="pagina protectora de animales alma mestiza">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="imagen/x-icon" href="img/iconos/paw-favicom.svg"> <!--FAVICOM-->
+
+    <title>Alma Mestiza</title>
+
+</head>
+
+<body>
+
+    <!-- Este HTML el es archivo principal de la página web
+    Estructura: 
+    -Header con  navegador/ header responsive
+    -Main con 5 secciones 
+    -Footer 
+    -->
+
+    <!--HEADER CORTINA RESPONSIVE -->
+    <!-- Este header cortina solo aparace en responsive-->
+    <div class="headerMovil" id="cortina">
+
+        <div class="headerMovil__conetenedor">
+
+            <button type="button" class="headerMovil__botonX" name="boton X" id="cierra"> &times; </button>
+
+            <ul class="headerMovil__listaMovil" id="listaResponsive"> <!--LISTA RESPONSIVE -->
+
+                <li class="headerMovil__elemLista" id="adopcionCortina"> Adopción <i class="fa-solid fa-paw"></i>
+                    <!--ADOPCION RESPONSIVE -->
+
+                    <ol class="headerMovil__extra" id="olCortina"> <!--MENU DESPLEGABLE ADOPCIÓN -->
+                        <li class="headerMovil__elemExtra">
+                            <a href="html/adopcion.html#perros" target="_self" class="headerMovil__linkOl"
+                                title="Perros responsive">Perros</a>
+                        </li>
+                        <li class="headerMovil__elemExtra">
+                            <a href="html/adopcion.html#gatos" target="_self" class="headerMovil__linkOl"
+                                title="Gatos responsive">Gatos</a>
+                        </li>
+                        <li class="headerMovil__elemExtra">
+                            <a href="html/adopcion.html#abuelos" target="_self" class="headerMovil__linkOl"
+                                title="Abuelitos responsive">Abuelitos</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="headerMovil__elemLista"> <a href="#nosotros" target="_self" class="headerMovil__link"
+                        title="Nosotros responsive"> Nosotros <i class="fa-solid fa-users"></i></a> </li>
+
+                <li class="headerMovil__elemLista" id="ayudarCortina">Ayudanos <i class="fa-solid fa-heart"></i></i>
+                    <!--AYUDANOS RESPONSIVE -->
+
+                    <ol class="headerMovil__extraAyuda" id="olLiCortina"> <!--MENU DESPLEGABLE AYUDA-->
+                        <li class="headerMovil__elemExtra"> <a href="html/dona.html" target="_self"
+                                class="headerMovil__linkOl" title="Dona responsive">Donar</a></li>
+                        <li class="headerMovil__elemExtra"> <a href="html/formulario.html" target="_self"
+                                class="headerMovil__linkOl" title="Voluntario responsive">
+                                Ser
+                                voluntario</a></li>
+                        <li class="headerMovil__elemExtra"> <a href="html/formulario.html" target="_self"
+                                class="headerMovil__linkOl" title="Socio responsive">Hazte
+                                socio</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="headerMovil__elemLista"> <a href="#formulario" class="headerMovil__link"
+                        title="Contacto responsive"> Contacto <i class="fa-solid fa-paper-plane"></i></a> </li>
+
+            </ul>
+
+            <a href="html/dona.html" target="_self" class="headerMovil__linkBoton" id="donaResponsive"
+                title="Boton donar responsive"> DONAR </a>
+            <!--BOTON DONAR RESPONSIVE-->
+
+        </div>
+    </div>
+
+
+    <!--HERADER PRINCIPAL-->
+    <!-- Este header cortina aparece en la pantalla normal sin responsive-->
+    <header class="header" id="inicio">
+
+        <h2 class="header__logo" id="logo"> ALMA MESTIZA </h2> <!-- LOGO-->
+
+        <nav class="header__nav" id="nav"> <!-- NAVEGADOR LOGO-->
+
+            <button type="button" class="header__barras header__barras--desaparece" name="boton barras" id="barras">
+                &#9776; </button>
+
+            <ul class="header__listas" id="ul"> <!-- LISTA HEADER-->
+
+                <li class="header__elemLista" id="adopcion"> Adopción <i class="fa-solid fa-paw"></i> <!--ADOPCIÓN-->
+
+                    <ol class="header__extraAdopcion" id="ol"><!--MENU DESPLEGABLE ADOPCION-->
+                        <li class="header__elemExtra"> <a href="html/adopcion.html#perros" target="_self"
+                                class="header__linkOl" title="Perros">Perros</a></li>
+                        <li class="header__elemExtra"> <a href="html/adopcion.html#gatos" target="_self"
+                                class="header__linkOl" title="Gatos">Gatos</a></li>
+                        <li class="header__elemExtra"> <a href="html/adopcion.html#abuelos" target="_self"
+                                class="header__linkOl" title="Abuelitos">Abuelitos</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="header__elemLista"> <a href="#nosotros" target="_self" class="header__link"
+                        title="Protectora">
+                        Nosotros <i class="fa-solid fa-users"></i></a> </li> <!-- NOSOTROS-->
+
+                <li class="header__elemLista" id="ayudar"> Ayudanos <i class="fa-solid fa-heart"></i><!--AYUDA-->
+
+                    <ol class="header__extraAyuda" id="olLi"><!-- MENU DESPLEGABLE AYUDA-->
+                        <li class="header__elemExtra"> <a href="html/dona.html" target="_self" class="header__linkOl"
+                                title="Dona">Donar</a></li>
+                        <li class="header__elemExtra"> <a href="html/formulario.html" target="_self"
+                                class="header__linkOl" title="Voluntario"> Ser
+                                voluntario</a></li>
+                        <li class="header__elemExtra"> <a href="html/formulario.html" target="_self"
+                                class="header__linkOl" title="Socio">Hazte socio</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="header__elemLista"> <a href="#formulario" target="_self" class="header__link"
+                        title="Contacto">
+                        Contacto <i class="fa-solid fa-paper-plane"></i></a> </li><!--CONTACTO-->
+            </ul>
+
+        </nav>
+
+        <a href="html/dona.html" target="_self" class="header__linkBotonDonar" title="Boton Dona"> DONAR </a>
+        <!--BOTON DONAR-->
+
+    </header>
+
+    <!--EMPIEZA CUERPO DE PAGINA -->
+    <main>
+
+        <!--CARRUSEL DE IMAGENES-->
+        <!--Carrusel contiene 3 imagenes que llevan a 3 archivos HTML diferentes-->
+        <section class="seccionImg">
+
+            <div class="seccionImg__carrusel">
+
+                <button type="button" class="seccionImg__botonIzq" id="flechaIzq"> <i
+                        class="fa-solid fa-arrow-left"></i> </button>
+
+
+                <div class="seccionImg__contenedor">
+
+                    <a href="html/adopcion.html" id="linkCarrusel"><img src="img/adopcion2.webp" alt="Adopción animal"
+                            class="seccionImg__img" id="banner" loading="lazy"></a>
+
+                </div>
+
+                <button type="button" class="seccionImg__botonDer" id="flechaDer"> <i
+                        class="fa-solid fa-arrow-right"></i></i> </button>
+
+
+            </div>
+
+        </section>
+
+        <!--QUIENES SOMOS-->
+        <!--Sección que describe una pequeña parte de la fundación-->
+        <section class="seccionSomos" id="nosotros">
+
+            <div class="seccionSomos__contenedor">
+
+                <div class="seccionSomos__contenedorImagen">
+
+                    <img src="img/protectorateam.webp" alt="Protectora" class="seccionSomos__img" loading="lazy">
+
+                </div>
+
+                <div class="seccionSomos__contenedorParrafos">
+
+                    <article class="seccionSomos__texto">
+                        <h2 class="seccionSomos__titulo"> ALMA MESTIZA</h2>
+                        <p class="seccionSomos__parrafos"> Somos es una protectora animal que inició sus actividades en
+                            el año 2020 con la noble
+                            misión de brindar un hogar amoroso a perros, gatos y abuelitos que necesitan una
+                            segunda oportunidad.
+                            Nuestra familia crece día a día gracias a nobles compañeros que son ayudan a continuar
+                            nuestra misión. A través de ellos nos hemos convertido en un refugio seguro para aquellos
+                            animales
+                            que han sido abandonados o maltratados, ofreciéndoles cuidado, atención veterinaria y, lo
+                            más
+                            importante,
+                            <b>mucho cariño.</b> Además, nos encargamos de encontrar familias adoptivas responsables que
+                            estén dispuestas a
+                            brindarles un hogar permanente a estos adorables compañeros peludos.
+                        </p>
+
+
+                    </article>
+
+                    <article class="seccionSomos__iconos">
+
+                        <p class="seccionSomos__iconosTexto"> Puedes seguirnos en nuestras RRSS! </p>
+
+                        <div class="seccionSomos__iconosImagen">
+                            <img src="img/iconos/instagram.svg" alt="Instagram" class="seccionSomos__iconosImagenRrss">
+                            <img src="img/iconos/facebook.svg" alt="Facebook" class="seccionSomos__iconosImagenRrss">
+                            <img src="img/iconos/x-twitter.svg" alt="x-twitter" class="seccionSomos__iconosImagenRrss">
+                        </div>
+
+                    </article>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ADOPCIÓN-->
+        <!--Sección que a través de 3 card muestra perros, gatos y abuelitos para poder adoptar, ademas de estar las imagenes enlazadas
+         con el archivo HTML correspondiente-->
+
+        <section class="seccionAdopcion">
+
+            <div class="seccionAdopcion__color"> </div> <!-- div vacio para dar estilos en css-->
+
+            <h2 class="seccionAdopcion__titulo"> Amigos disponibles para recibir TÚ amor :) </h2>
+
+            <div class="seccionAdopcion__conetendorCards">
+
+                <article class="seccionAdopcion__cardPrincipal">
+
+                    <div class="seccionAdopcion__cardTodo">
+
+                        <img src="img/gatitosx1000.webp" alt="Gatos para adoptar" class="seccionAdopcion__imagen"
+                            loading="lazy">
+
+                        <div class="seccionAdopcion__linkMas">
+                            <a href="html/adopcion.html#gatos" class="seccionAdopcion__link"> Ver más</a> <!--ENLAZAR-->
+                        </div>
+
+                    </div>
+
+                    <p class="seccionAdopcion__parrafo"> Nuestros <strong> GATOS </strong> en adopción </p>
+
+                </article>
+
+                <article class="seccionAdopcion__cardPrincipal">
+
+                    <div class="seccionAdopcion__cardTodo">
+
+                        <img src="img/viejitosx1000.jpg" alt="Abuelitos para adoptar" class="seccionAdopcion__imagen"
+                            loading="lazy">
+
+                        <div class="seccionAdopcion__linkMas">
+                            <a href="html/adopcion.html#abuelos" class="seccionAdopcion__link"> Ver más </a>
+                        </div>
+
+                    </div>
+
+                    <p class="seccionAdopcion__parrafo"> Nuestros <strong> ABUELITOS </strong> en adopción </p>
+
+                </article>
+
+                <article class="seccionAdopcion__cardPrincipal">
+
+                    <div class="seccionAdopcion__cardTodo">
+
+                        <img src="img/perritosx1000T.webp" alt="Perros para adoptar" class="seccionAdopcion__imagen"
+                            loading="lazy">
+
+                        <div class="seccionAdopcion__linkMas">
+                            <a href="html/adopcion.html#perros" class="seccionAdopcion__link"> Ver más </a>
+                        </div>
+
+                    </div>
+
+                    <p class="seccionAdopcion__parrafo"> Nuestros <strong>PERROS </strong>en adopción </p>
+
+                </article>
+
+            </div>
+
+            <div class="seccionAdopcion__color"> </div> <!-- div vacio para dar estilos en css-->
+
+
+        </section>
+
+        <!--PASOS ADOPCIÓN-->
+        <!--En esta sección se intenta dar a entender el proceso de adopción de la fundación mediante cards (contenidas dentro de una etiqueta div)
+         que contiene un icono más el texto. Además de fondo se utiliza una imagen. Etiqueta a enlazada con HTML formulario-->
+        <section class="seccionPasos">
+
+            <h2 class="seccionPasos__titulo"> Estos son los pasos para adoptar a uno de nuestros amigos <i
+                    class="fa-solid fa-face-smile-wink"></i> </h2>
+
+            <div class="seccionPasos__contenedor">
+
+                <article class="seccionPasos__conetnedorImagen">
+                    <img src="img/iconos/contactoBlanco.svg" alt="Contacto" class="seccionPaso__imagen" loading="lazy">
+                    <p class="seccionPaso__parrafo"> 1. Contacto </p>
+                </article>
+
+                <article class="seccionPasos__conetnedorImagen">
+                    <img src="img/iconos/formularioBlanco.svg" alt="Cuestionario" class="seccionPaso__imagen"
+                        loading="lazy">
+                    <p class="seccionPaso__parrafo"> 2. Llenar formulario </p>
+                </article>
+
+
+                <article class="seccionPasos__conetnedorImagen">
+                    <img src="img/iconos/mensajeBlanco.svg" alt="Entrevista" class="seccionPaso__imagen" loading="lazy">
+                    <p class="seccionPaso__parrafo"> 3. Entrevista</p>
+                </article>
+
+                <article class="seccionPasos__conetnedorImagen">
+                    <img src="img/iconos/contratoBlanco.svg" alt="Entrevista" class="seccionPaso__imagen"
+                        loading="lazy">
+                    <p class="seccionPaso__parrafo"> 4. Contrato </p>
+                </article>
+
+            </div>
+
+            <a href="html/formulario.html" title="saber más" target="_self" class="seccionPasos__boton"> Saber más </a>
+
+        </section>
+
+        <!-- CONTACTO FUNDACIÓN-->
+        <!-- En esta sección se daran a conocer la fomra de contactar a la fundación, además de que el usuario pueda dejar sus datos
+          a través de un formulario para así ser contactado posteriormente -->
+
+        <section class="seccionContacto" id="formulario">
+
+            <h2 class="seccionContacto__titulo"> Conéctate con nuestra Fundación Animal <i
+                    class="fa-solid fa-shield-cat"></i> </h2>
+
+            <div class="seccionContacto__contenedorTotal">
+
+                <p class="seccionContacto__parrafo"> Si estas interesado en <strong>ADOPTAR</strong> a uno de nuestros
+                    amigos,
+                    puedes hacerlo dejando tus datos en el formulario de contacto y nosostros te hablaremos a la
+                    brevedad, o bien, enviando un correo electrónico a almamestiza@gmail.com.
+                    <br>
+                    Permitimos visitas a nuestras instalaciones para ver a nuestros animales los dias míercoles,
+                    en horario de 9:00 a 17:00 hrs. Estamos ubicados en Calle Principal #123, Sevilla.
+                    <br>
+                    No dudes en hablarnos!.
+                </p>
+
+                <article class="seccionContacto__formulario">
+
+                    <form name="Formulario contacto" action="#" method="get" id="formu"> <!--QUE PONGO EN ACTION?-->
+
+                        <ul class="seccionContacto__lista">
+
+                            <li class="seccionContacto__elementoLista">
+                                <label for="nomCon">Nombre:</label><br>
+                                <input name="nombre" type="text" placeholder="Escribe tu nombre..." id="nomCon"
+                                    required>
+                            </li>
+
+                            <li class="seccionContacto__elementoLista">
+                                <label for="mov"> Móvil:</label> <br>
+                                <input name="movil" type="text" maxlength="12" placeholder="+34" id="mov">
+                            </li>
+
+                            <li class="seccionContacto__elementoLista">
+                                <label for="email">Correo electrónico:</label> <br>
+                                <input name="correo" type="email" placeholder="Esribe tu correo..." id="email" required>
+                            </li>
+
+                            <li class="seccionContacto__elementoLista">
+                                <label for="menj">Mensaje:</label> <br>
+                                <textarea name="mensaje" cols="10" rows="1" class="seccionContacto__textarea" id="menj"
+                                    placeholder="Escribe aquí..."></textarea>
+                            </li>
+                            <li class="seccionContacto__elementoLista">
+                                <input type="submit" value="Enviar" class="seccionContacto__enviar" id="enviar">
+                            </li>
+
+
+                        </ul>
+
+                    </form>
+
+                </article>
+
+            </div>
+
+            <a href="#inicio" class="seccionContacto__volver"> Volver inicio </a>
+
+        </section>
+
+    </main>
+    <!-- FOOTER-->
+    <!-- Footer contiene dos div, el primero tiene el logo de la fundacion, los mismo enlaces que navegador e iconos de
+         RRSS, el segundo div contiene derechos reservados, privacidad, aviso legal y cookies. -->
+
+    <footer class="footer">
+
+
+        <div class="footer__contenedorCuerpo">
+
+            <a href="#inicio" title="logo footer" class="footer__logo"> ALMA MESTIZA </a>
+
+            <ul class="footer__lista">
+                <li class="footer__elementoLista"> <i class="fa-solid fa-paw"></i> Adopción
+                    <ol class="footer__ExtraAdopcion">
+                        <li class="footer__elementoExtra"> <a href="html/adopcion.html#perros" title="footer perros"
+                                target="_self" class="footer__links"> Perros</a></li>
+                        <li class="footer__elementoExtra"> <a href="html/adopcion.html#gatos" title="footer gatos"
+                                target="_self" class="footer__links"> Gatos</a></li>
+                        <li class="footer__elementoExtra"> <a href="html/adopcion.html#abuelos" title="footer abuelitos"
+                                target="_self" class="footer__links"> Abuelitos </a></li>
+                    </ol>
+                </li>
+
+                <li class="footer__elementoLista"> <a href="#nosotros" title="footer nosotros" class="footer__links"> <i
+                            class="fa-solid fa-users"></i> Nosotros </a> </li>
+
+                <li class="footer__elementoLista"> <i class="fa-solid fa-heart"></i> Ayudanos
+
+                    <ol class="footer__ExtraAdopcion">
+                        <li class="footer__elementoExtra"> <a href="html/dona.html" title="footer donar" target="_self"
+                                class="footer__links"> Donar</a></li>
+                        <li class="footer__elementoExtra"> <a href="html/formulario.html" title="footer voluntario"
+                                target="_self" class="footer__links"> Ser voluntario</a></li>
+                        <li class="footer__elementoExtra"> <a href="html/formulario.html" title="footer socio"
+                                target="_self" class="footer__links"> hazte socio </a></li>
+                    </ol>
+                </li>
+                <li class="footer__elementoLista"> <a href="#formulario" title="footer contacto" class="footer__links">
+                        <i class="fa-solid fa-paper-plane"></i> Contacto </a> </li>
+
+            </ul>
+
+            <div class="footer__iconos">
+
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </div>
+
+        </div>
+
+        <div class="footer__contenedorPie">
+
+            <div class="footer__vacio"> </div>
+
+            <ul class="footer__otrasListas">
+                <li class="footer__listaPie">Todos los derechos reservados</li>
+                <li class="footer__listaPie">Aviso legar</li>
+                <li class="footer__listaPie">Privacidad</li>
+                <li class="footer__listaPie">Cookies</li>
+
+            </ul>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>

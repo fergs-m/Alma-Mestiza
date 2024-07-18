@@ -1,0 +1,634 @@
+/*CSS
+- Variables
+- Cambio en body
+- Header Cortina responsive
+- Header principal
+- Main: Secciones -> 3 secciones. una contiene el inicio, otro las card y el ultimo un link de enlace. 
+- Footer */
+
+@font-face {
+    font-family: 'letraPoppins';
+    /*Definición de tipografía de toda la página*/
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+:root {
+
+    --colorTexto: #171512;
+    /*Color del texto de pagina*/
+    --colorfondo: #F2F2F4;
+    /*Color del fondo de pagina*/
+    --verde: #6B914E;
+    --rosado: #FFAAB1;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--colorfondo);
+    font-family: 'letraPoppins';
+}
+
+
+/*HEADER CORTINA RESPONSIVE*/
+
+.headerMovil {
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+
+    background-color: var(--verde);
+    width: 0;
+    transition: 1s width;
+
+}
+
+.headerMovil__conetenedor {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Boton X movil*/
+.headerMovil__botonX {
+
+    border: 2px solid var(--colorfondo);
+    color: var(--colorfondo);
+    background-color: transparent;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    padding: 0.5rem 0.8rem;
+
+    align-self: end;
+    margin: 1rem;
+}
+
+.headerMovil__botonX:hover {
+
+    background-color: var(--colorTexto);
+}
+
+/*Boton donar movil */
+.headerMovil__linkBoton {
+    color: var(--colorfondo);
+    background-color: var(--colorTexto);
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+.headerMovil__linkBoton:hover {
+    color: var(--colorTexto);
+    background-color: var(--colorfondo);
+}
+
+/*Lista movil*/
+.headerMovil__listaMovil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/*Menus desplegables movil*/
+.headerMovil__extra {
+    list-style: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: 1s max-height
+}
+
+.headerMovil__extraAyuda {
+    list-style: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: 1s max-height
+}
+
+.altura {
+    /*clase creada en css para que aparezca menus desplegables ayuda y adopción */
+    max-height: 100rem;
+}
+
+
+@keyframes lista {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.desaparece {
+    /*clase creada en css para transision menu*/
+    animation: lista 1s ease-out;
+}
+
+/*Elementos de lista movil*/
+
+.headerMovil__elemLista {
+    color: var(--colorfondo);
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerMovil__elemLista:hover {
+    color: var(--colorTexto);
+}
+
+.headerMovil__elemExtra {
+    cursor: pointer;
+
+}
+
+.headerMovil__elemExtra:hover {
+    color: var(--colorTexto);
+}
+
+.headerMovil__link {
+    text-decoration: none;
+    color: var(--colorfondo);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.headerMovil__link:hover {
+    color: var(--colorTexto);
+}
+
+.headerMovil__linkOl {
+    margin: 0;
+    padding: 0;
+    color: var(--colorfondo);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.headerMovil__linkOl:hover {
+    color: var(--colorTexto);
+}
+
+/*HEADER PRINCIPAL*/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+    padding: 1rem;
+    background-color: var(--verde);
+    color: var(--colorfondo);
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        justify-content: space-between;
+    }
+}
+
+/*Navegador*/
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__logo {
+    font-size: 1.7rem;
+    color: var(--colorfondo);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 350px) {
+    .header__logo {
+        font-size: 1.2rem;
+    }
+}
+
+/*Listas*/
+.header__listas {
+    display: flex;
+    padding: 0;
+    gap: 1.6rem;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 922px) {
+    .header__listas {
+        display: none;
+    }
+}
+
+/*MENU desplegable adopción*/
+.header__extraAdopcion {
+    list-style-type: none;
+
+    z-index: 1;
+
+    padding: 0 0.5rem;
+    margin: 0;
+
+    background-color: #171512ab;
+    border-radius: 0.5rem;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: 1s max-height;
+
+    position: absolute;
+    /**/
+}
+
+/*Menu desplegable ayuda*/
+.header__extraAyuda {
+    list-style-type: none;
+    padding: 0 0.5rem;
+
+    z-index: 1;
+
+    background-color: #171512ab;
+    border-radius: 0.5rem;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: 1s max-height;
+    position: absolute;
+}
+
+.header__linkOl {
+    text-decoration: none;
+    color: var(--colorfondo);
+}
+
+.header__linkOl:hover {
+    color: var(--verde);
+}
+
+.header__elemLista {
+    cursor: pointer;
+    position: relative;
+
+}
+
+.header__elemLista:hover {
+    color: var(--colorTexto);
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--colorfondo);
+}
+
+.header__link:hover {
+    color: var(--colorTexto);
+}
+
+/*Boton donar*/
+.header__linkBotonDonar {
+    background-color: var(--colorTexto);
+    color: var(--colorfondo);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 0.9rem;
+}
+
+.header__linkBotonDonar:hover {
+    background-color: var(--colorfondo);
+    color: var(--colorTexto);
+}
+
+@media screen and (max-width: 922px) {
+    .header__linkBotonDonar {
+        display: none;
+    }
+}
+
+/*Boron barra*/
+
+.header__barras {
+    background-color: var(--colorfondo);
+    color: var(--colorTexto);
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.4rem 0.6rem;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .header__barras {
+        margin: 0 2rem 0 0;
+    }
+}
+
+.header__barras:hover {
+    background-color: var(--colorTexto);
+    color: var(--colorfondo);
+
+}
+
+.header__barras--desaparece {
+    display: none;
+}
+
+@media screen and (max-width: 922px) {
+    .header__barras--desaparece {
+        display: block;
+    }
+}
+
+/*SECCIÓN TEXTO INICIO*/
+
+.seccionAdopcionTexto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.seccionAdopcionTexto__titulo {
+    color: var(--colorTexto);
+    margin: 4rem 0 0 0;
+    font-size: 2.5rem;
+}
+
+.seccionAdopcionTexto__parrafo {
+    width: 50%;
+    color: var(--colorTexto);
+    font-size: 1.1rem;
+    text-align: center;
+
+    padding: 1rem;
+}
+
+/*SECCIÓN CARDS ANIMALES*/
+
+/*Perros*/
+.seccionCardsAnimales__perros {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.seccionCardsAnimales__divContenedor {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    .seccionCardsAnimales__divContenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.seccionCardsAnimales__articleImg {
+    width: 50%;
+}
+
+.seccionCardsAnimales__imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.seccionCardsAnimales__articleTexto {
+    width: 40%;
+    align-content: center;
+}
+
+@media screen and (max-width: 680px) {
+    .seccionCardsAnimales__articleTexto {
+        width: 50%;
+    }
+}
+
+.seccionCardsAnimales__imagen {
+    width: 100%;
+}
+
+/*Gatos*/
+.seccionCardsAnimales__gatos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*Abuelos*/
+.seccionCardsAnimales__abuelos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.seccionCardsAnimales__titulo {
+    text-align: center;
+    background-color: var(--colorTexto);
+    color: var(--colorfondo);
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+/*SECCIÓN CLICK*/
+.seccionClick__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    .seccionClick__contenedor {
+        flex-direction: column;
+    }
+}
+
+.seccionClick__titulo {
+    background-color: var(--colorTexto);
+    color: var(--colorfondo);
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.seccionClick__texto {
+    width: 40%;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 680px) {
+    .seccionClick__texto {
+        width: 80%;
+    }
+}
+
+.seccionClick__img {
+    width: 30%;
+    height: 18%;
+}
+
+@media screen and (max-width: 680px) {
+    .seccionClick__img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .seccionClick__img {
+        width: 80%;
+    }
+}
+
+.seccionClick__link {
+    color: var(--verde);
+}
+
+.seccionClick__linkVolver {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.seccionClick__volver {
+    /*Anclaje para volver a navegador*/
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--verde);
+    margin: 1rem;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verde);
+    color: var(--colorfondo);
+}
+
+@media screen and (max-width: 830px) {
+    .footer {
+        align-items: center;
+    }
+}
+
+/*Primer div*/
+.footer__contenedorCuerpo {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 440px) {
+    .footer__contenedorCuerpo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__lista {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+@media screen and (max-width: 830px) {
+    .footer__lista {
+        flex-direction: column;
+    }
+}
+
+.footer__elementoLista {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.footer__elementoExtra {
+    list-style-type: disc;
+}
+
+.footer__links {
+    text-decoration: none;
+    color: var(--colorfondo);
+}
+
+.footer__links:hover {
+    text-decoration: underline;
+}
+
+.footer__logo {
+    font-size: 1.7rem;
+    color: var(--colorfondo);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.footer__iconos {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+/*Segundo div*/
+
+.footer__otrasListas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 440px) {
+    .footer__otrasListas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.footer__listaPie {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.footer__vacio {
+    background-color: var(--colorfondo);
+    width: 100%;
+    height: 2px;
+    opacity: 0.5;
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernanda Guerra">
+    <meta name="keywords" content="protectora, animales, adopcion, perros, gatos, senior, donar">
+    <meta name="description" content="pagina protectora de animales alma mestiza">
+    <link rel="stylesheet" type="text/css" href="../css/formulario.css">
+    <script src="../js/formulario.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="imagen/x-icon" href="../img/iconos/paw-favicom.svg"> <!--FAVICOM-->
+
+    <title>Alma Mestiza</title>
+</head>
+
+<body>
+
+    <!-- Este HTML el es archivo que contiene el formulario para adopción, ser socio o voluntario
+    Estructura: 
+    -Header con  navegador/ header responsive
+    -Main con 3 secciones 
+    -Footer 
+    -->
+
+    <!--HEADER CORTINA RESPONSIVE -->
+    <!-- Este header cortina solo aparace en responsive-->
+
+    <!--HEADER CORTINA RESPONSIVE -->
+
+    <div class="headerMovil" id="cortina">
+
+        <div class="headerMovil__conetenedor">
+
+            <button type="button" class="headerMovil__botonX" name="boton X" id="cierra"> &times; </button>
+
+            <ul class="headerMovil__listaMovil" id="listaResponsive"> <!--LISTA RESPONSIVE -->
+
+                <li class="headerMovil__elemLista" id="adopcionCortina"> Adopción <i class="fa-solid fa-paw"></i>
+                    <!--ADOPCION RESPONSIVE -->
+
+                    <ol class="headerMovil__extra" id="olCortina"> <!--MENU DESPLEGABLE ADOPCIÓN FALTA ENLAZAR CON ID-->
+                        <li class="headerMovil__elemExtra">
+                            <a href="adopcion.html#perros" target="_self" class="headerMovil__linkOl"
+                                title="Perros responsive">Perros</a>
+                        </li>
+                        <li class="headerMovil__elemExtra">
+                            <a href="adopcion.html#gatos" target="_self" class="headerMovil__linkOl"
+                                title="Gatos responsive">Gatos</a>
+                        </li>
+                        <li class="headerMovil__elemExtra">
+                            <a href="adopcion.html#abuelos" target="_self" class="headerMovil__linkOl"
+                                title="Abuelitos responsive">Abuelitos</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="headerMovil__elemLista"> <a href="../index.html#nosotros" target="_self"
+                        class="headerMovil__link" title="Nosotros responsive"> Nosotros <i
+                            class="fa-solid fa-users"></i></a> </li>
+
+                <li class="headerMovil__elemLista" id="ayudarCortina">Ayudanos <i class="fa-solid fa-heart"></i>
+                    <!--AYUDANOS RESPONSIVE -->
+
+                    <ol class="headerMovil__extraAyuda" id="olLiCortina"> <!--MENU DESPLEGABLE AYUDA-->
+                        <li class="headerMovil__elemExtra"> <a href="dona.html" target="_self"
+                                class="headerMovil__linkOl" title="Dona responsive">Donar</a></li>
+                        <li class="headerMovil__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="headerMovil__linkOl" title="Voluntario responsive">
+                                Ser
+                                voluntario</a></li>
+                        <li class="headerMovil__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="headerMovil__linkOl" title="Socio responsive">Hazte
+                                socio</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="headerMovil__elemLista"> <a href="../index.html#formulario" class="headerMovil__link"
+                        title="Contacto responsive"> Contacto <i class="fa-solid fa-paper-plane"></i></a> </li>
+
+            </ul>
+
+            <a href="dona.html" target="_self" class="headerMovil__linkBoton" id="donaResponsive"
+                title="Boton donar responsive"> DONAR </a>
+            <!--BOTON DONAR RESPONSIVE-->
+
+        </div>
+    </div>
+
+
+    <!--HERADER PRINCIPAL-->
+
+    <header class="header" id="inicio">
+
+        <a href="../index.html#inicio" title="logo header" class="header__logo"> ALMA MESTIZA </a><!-- LOGO-->
+
+        <nav class="header__nav" id="nav"> <!-- NAVEGADOR LOGO-->
+
+            <button type="button" class="header__barras header__barras--desaparece" name="boton barras" id="barras">
+                &#9776; </button>
+
+            <ul class="header__listas" id="ul"> <!-- LISTA HEADER-->
+
+                <li class="header__elemLista" id="adopcion"> Adopción <i class="fa-solid fa-paw"></i> <!--ADOPCIÓN-->
+
+                    <ol class="header__extraAdopcion" id="ol"><!--MENU DESPLEGABLE ADOPCION-->
+                        <!--LINKIAR CON ID DE SECCION-->
+                        <li class="header__elemExtra"> <a href="adopcion.html#perros" target="_self"
+                                class="header__linkOl" title="Perros">Perros</a></li>
+                        <li class="header__elemExtra"> <a href="adopcion.html#gatos" target="_self"
+                                class="header__linkOl" title="Gatos">Gatos</a></li>
+                        <li class="header__elemExtra"> <a href="adopcion.html#abuelos" target="_self"
+                                class="header__linkOl" title="Abuelitos">Abuelitos</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="header__elemLista"> <a href="../index.html#nosotros" target="_self" class="header__link"
+                        title="Protectora">
+                        Nosotros <i class="fa-solid fa-users"></i></a> </li> <!-- NOSOTROS-->
+
+                <li class="header__elemLista" id="ayudar"> Ayudanos <i class="fa-solid fa-heart"></i><!--AYUDA-->
+
+                    <ol class="header__extraAyuda" id="olLi"><!-- MENU DESPLEGABLE AYUDA-->
+                        <li class="header__elemExtra"> <a href="dona.html" target="_self" class="header__linkOl"
+                                title="Dona">Donar</a></li>
+                        <li class="header__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="header__linkOl" title="Voluntario"> Ser
+                                voluntario</a></li>
+                        <li class="header__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="header__linkOl" title="Socio">Hazte socio</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="header__elemLista"> <a href="../index.html#formulario" target="_self" class="header__link"
+                        title="Contacto">
+                        Contacto <i class="fa-solid fa-paper-plane"></i></a> </li><!--CONTACTO-->
+            </ul>
+
+        </nav>
+
+        <a href="dona.html" target="_self" class="header__linkBotonDonar" title="Boton Dona"> DONAR </a>
+        <!--BOTON DONAR-->
+
+    </header>
+
+    <main>
+
+        <!--CUERPO PRINCIPAL-->
+
+        <section class="seccionInicio"> <!-- Esta seccion contiene el titulo y un hero image-->
+
+            <div class="seccionInicio__contenedor">
+
+                <h2 class="seccionInicio__titulo"> Formulario Contacto</h2>
+
+            </div>
+
+        </section>
+
+        <section class="seccionFormulario"><!--Sección que contiene parrafo descriptivo y el formulario-->
+
+            <h2 class="seccionFormulario__titulo"> Estamos emocionados de que estes aquí! </h2>
+
+
+            <div class="seccionFormulario__contenedor">
+
+
+                <div class="seccionFormulario__parrafos">
+
+                    <p class="seccionFormulario__texto"> Nos alegra que estés interesado/a en colaborar con nuestra
+                        fundación animal. En Alma Mestiza, trabajamos arduamente para mejorar la vida de los animales
+                        necesitados y valoramos profundamente el apoyo de personas como tú. </p>
+                    <p class="seccionFormulario__texto"> Para facilitar el proceso de contacto y asegurarnos de que
+                        podamos responder a tu interés de la mejor manera posible, te invitamos a completar nuestro
+                        formulario de contacto. A través de este formulario, podrás indicarnos si deseas convertirte en
+                        socio/a, ofrecerte como voluntario/a, o adoptar uno de nuestros queridos animales.</p>
+                    <p class="seccionFormulario__texto"> Por favor, asegúrate de llenar todos los campos requeridos con
+                        información precisa y
+                        actualizada. Esto nos permitirá ponernos en contacto contigo rápidamente y proporcionarte toda
+                        la información que necesitas para unirte a nuestra causa.Una vez que recibamos tu formulario,
+                        uno de nuestros representantes se comunicará contigo para
+                        guiarte en los próximos pasos y resolver cualquier duda que puedas tener. </p>
+
+                </div>
+
+
+
+                <div class="seccionFormulario__form">
+                    <!--Etiqueta form que contiene una lista para dejar input en orden-->
+
+                    <form name="Formulario contacto" action="#" method="get" id="contacto">
+
+                        <ul class="seccionFormulario__lista">
+
+                            <li class="seccionFormulario__elementoLista">
+                                <label for="nom">Nombre:</label><br>
+                                <input name="nombre" type="text" placeholder="Escribe tu nombre..." id="nom" required>
+                            </li>
+
+                            <li class="seccionFormulario__elementoLista">
+                                <label for="mov"> Móvil:</label> <br>
+                                <input name="movil" type="text" maxlength="12" placeholder="+34" id="mov">
+                            </li>
+
+                            <li class="seccionFormulario__elementoLista">
+                                <label for="email">Correo electrónico:</label> <br>
+                                <input name="correo" type="email" placeholder="Esribe tu correo..." id="email" required>
+                            </li>
+
+                            <li class="seccionFormulario__elementoLista">
+                                <p class="seccionFormulario__interes"> Interés: </p>
+                                <label for="checkbox1">Adopción</label>
+                                <input type="checkbox" name="Adopción" id="checkbox1">
+                                <label for="checkbox2"> Socio </label>
+                                <input type="checkbox" name="Socio" id="checkbox2">
+                                <label for="checkbox3"> Voluntario</label>
+                                <input type="checkbox" name="Voluntario" id="checkbox3">
+
+                            </li>
+
+                            <li class="seccionFormulario__elementoLista">
+                                <label for="menj">Mensaje:</label> <br>
+                                <textarea name="mensaje" cols="10" rows="1" class="seccionFormulario__textarea"
+                                    id="menj" placeholder="Escribe aquí..."></textarea>
+                            </li>
+                            <li class="seccionFormulario__elementoLista">
+                                <input type="submit" value="Enviar" class="seccionFormulario__enviar" id="envi">
+                            </li>
+                        </ul>
+
+                    </form>
+                </div>
+
+                <div class="seccionFormulario__modal" id="modal"> <!--Modal-->
+                    <button type="button" name="botón cerrar" id="cerrarX" class="seccionFormulario__botonX"> X
+                    </button>
+            
+                    <div class="seccionFormulario__contenedorModal">
+            
+                        <div class="seccionFormulario__contenedorGracias">
+            
+                            <p class="seccionFormulario__gracias"> Gracias por ponerte en contacto! a la brevedad te
+                                responderemos.
+                                A nombre de Alma Mestiza te damos las gracias por unirte a esta noble causa.
+                            </p>
+                            <p class="seccionFormulario__iconosGracias"> <i class="fa-solid fa-dog"></i> <i
+                                    class="fa-solid fa-heart"></i> <i class="fa-solid fa-cat"></i> </p>
+            
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+
+        </section>
+
+    </main>
+
+
+ 
+    <!-- FOOTER DE FORMULARIO -->
+    <!-- Mismo footer que index. -->
+
+    <footer class="footer">
+
+
+        <div class="footer__contenedorCuerpo">
+
+            <h2 class="footer__logo"> ALMA MESTIZA </h2>
+
+            <ul class="footer__lista">
+                <li class="footer__elementoLista"> <i class="fa-solid fa-paw"></i> Adopción
+                    <ol class="footer__ExtraAdopcion">
+                        <li class="footer__elementoExtra"> <a href="adopcion.html#perros" title="footer perros"
+                                target="_self" class="footer__links"> Perros</a></li>
+                        <li class="footer__elementoExtra"> <a href="adopcion.html#gatos" title="footer gatos"
+                                target="_self" class="footer__links"> Gatos</a></li>
+                        <li class="footer__elementoExtra"> <a href="adopcion.html#abuelos" title="footer abuelitos"
+                                target="_self" class="footer__links"> Abuelitos </a></li>
+                    </ol>
+                </li>
+
+                <li class="footer__elementoLista"> <a href="../index.html#nosotros" title="footer nosotros"
+                        class="footer__links"> <i class="fa-solid fa-users"></i> Nosotros </a> </li>
+
+                <li class="footer__elementoLista"> <i class="fa-solid fa-heart"></i> Ayudanos
+
+                    <ol class="footer__ExtraAdopcion">
+                        <li class="footer__elementoExtra"> <a href="dona.html" title="footer donar" target="_self"
+                                class="footer__links"> Donar</a></li>
+                        <li class="footer__elementoExtra"> <a href="formulario.html" title="footer voluntario"
+                                target="_self" class="footer__links"> Ser voluntario</a></li>
+                        <li class="footer__elementoExtra"> <a href="formulario.html" title="footer socio" target="_self"
+                                class="footer__links"> hazte socio </a></li>
+                    </ol>
+                </li>
+                <li class="footer__elementoLista"> <a href="../index.html#formulario" title="footer contacto"
+                        class="footer__links">
+                        <i class="fa-solid fa-paper-plane"></i> Contacto </a> </li>
+
+            </ul>
+
+            <div class="footer__iconos">
+
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </div>
+
+        </div>
+
+        <div class="footer__contenedorPie">
+
+            <div class="footer__vacio"> </div>
+
+            <ul class="footer__otrasListas">
+                <li class="footer__listaPie">Todos los derechos reservados</li>
+                <li class="footer__listaPie">Aviso legar</li>
+                <li class="footer__listaPie">Privacidad</li>
+                <li class="footer__listaPie">Cookies</li>
+
+            </ul>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>

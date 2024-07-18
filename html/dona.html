@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernanda Guerra">
+    <meta name="keywords" content="protectora, animales, adopcion, perros, gatos, senior, donar">
+    <meta name="description" content="pagina protectora de animales alma mestiza">
+    <link rel="stylesheet" type="text/css" href="../css/dona.css">
+    <script src="../js/dona.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="imagen/x-icon" href="../img/iconos/paw-favicom.svg"> <!--FAVICOM-->
+
+    <title>Alma Mestiza</title>
+</head>
+
+<body>
+
+    <!-- Este HTML es el que contiene la información para donar . 
+    Estructura: 
+    -Header con  navegador/ header responsive
+    -Main con 2 secciones 
+    -Footer 
+    -->
+
+    <!--HEADER CORTINA RESPONSIVE -->
+
+    <div class="headerMovil" id="cortina">
+
+        <div class="headerMovil__conetenedor">
+
+            <button type="button" class="headerMovil__botonX" name="boton X" id="cierra"> &times; </button>
+
+            <ul class="headerMovil__listaMovil" id="listaResponsive"> <!--LISTA RESPONSIVE -->
+
+                <li class="headerMovil__elemLista" id="adopcionCortina"> Adopción <i class="fa-solid fa-paw"></i>
+                    <!--ADOPCION RESPONSIVE -->
+
+                    <ol class="headerMovil__extra" id="olCortina"> <!--MENU DESPLEGABLE ADOPCIÓN FALTA ENLAZAR CON ID-->
+                        <li class="headerMovil__elemExtra">
+                            <a href="adopcion.html#perros" target="_self" class="headerMovil__linkOl"
+                                title="Perros responsive">Perros</a>
+                        </li>
+                        <li class="headerMovil__elemExtra">
+                            <a href="adopcion.html#gatos" target="_self" class="headerMovil__linkOl"
+                                title="Gatos responsive">Gatos</a>
+                        </li>
+                        <li class="headerMovil__elemExtra">
+                            <a href="adopcion.html#abuelos" target="_self" class="headerMovil__linkOl"
+                                title="Abuelitos responsive">Abuelitos</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="headerMovil__elemLista"> <a href="../index.html#nosotros" target="_self"
+                        class="headerMovil__link" title="Nosotros responsive"> Nosotros <i
+                            class="fa-solid fa-users"></i></a> </li>
+
+                <li class="headerMovil__elemLista" id="ayudarCortina">Ayudanos <i class="fa-solid fa-heart"></i> </i>
+                    <!--AYUDANOS RESPONSIVE -->
+
+                    <ol class="headerMovil__extraAyuda" id="olLiCortina"> <!--MENU DESPLEGABLE AYUDA-->
+                        <li class="headerMovil__elemExtra"> <a href="dona.html" target="_self"
+                                class="headerMovil__linkOl" title="Dona responsive">Donar</a></li>
+                        <li class="headerMovil__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="headerMovil__linkOl" title="Voluntario responsive">
+                                Ser
+                                voluntario</a></li>
+                        <li class="headerMovil__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="headerMovil__linkOl" title="Socio responsive">Hazte
+                                socio</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="headerMovil__elemLista"> <a href="../index.html#formulario" class="headerMovil__link"
+                        title="Contacto responsive"> Contacto <i class="fa-solid fa-paper-plane"></i></a> </li>
+
+            </ul>
+
+            <a href="dona.html" target="_self" class="headerMovil__linkBoton" id="donaResponsive"
+                title="Boton donar responsive"> DONAR </a>
+            <!--BOTON DONAR RESPONSIVE-->
+
+        </div>
+    </div>
+
+
+    <!--HERADER PRINCIPAL-->
+
+    <header class="header" id="inicio">
+
+        <a href="../index.html#inicio" title="logo header" class="header__logo"> ALMA MESTIZA </a><!-- LOGO-->
+
+        <nav class="header__nav" id="nav"> <!-- NAVEGADOR LOGO-->
+
+            <button type="button" class="header__barras header__barras--desaparece" name="boton barras" id="barras">
+                &#9776; </button>
+
+            <ul class="header__listas" id="ul"> <!-- LISTA HEADER-->
+
+                <li class="header__elemLista" id="adopcion"> Adopción <i class="fa-solid fa-paw"></i> <!--ADOPCIÓN-->
+
+                    <ol class="header__extraAdopcion" id="ol"><!--MENU DESPLEGABLE ADOPCION-->
+                        <!--LINKIAR CON ID DE SECCION-->
+                        <li class="header__elemExtra"> <a href="adopcion.html#perros" target="_self"
+                                class="header__linkOl" title="Perros">Perros</a></li>
+                        <li class="header__elemExtra"> <a href="adopcion.html#gatos" target="_self"
+                                class="header__linkOl" title="Gatos">Gatos</a></li>
+                        <li class="header__elemExtra"> <a href="adopcion.html#abuelos" target="_self"
+                                class="header__linkOl" title="Abuelitos">Abuelitos</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="header__elemLista"> <a href="../index.html#nosotros" target="_self" class="header__link"
+                        title="Protectora">
+                        Nosotros <i class="fa-solid fa-users"></i></a> </li> <!-- NOSOTROS-->
+
+                <li class="header__elemLista" id="ayudar"> Ayudanos <i class="fa-solid fa-heart"></i><!--AYUDA-->
+
+                    <ol class="header__extraAyuda" id="olLi"><!-- MENU DESPLEGABLE AYUDA-->
+                        <li class="header__elemExtra"> <a href="dona.html" target="_self" class="header__linkOl"
+                                title="Dona">Donar</a></li>
+                        <li class="header__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="header__linkOl" title="Voluntario"> Ser
+                                voluntario</a></li>
+                        <li class="header__elemExtra"> <a href="../html/formulario.html" target="_self"
+                                class="header__linkOl" title="Socio">Hazte socio</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="header__elemLista"> <a href="../index.html#formulario" target="_self" class="header__link"
+                        title="Contacto">
+                        Contacto <i class="fa-solid fa-paper-plane"></i></a> </li><!--CONTACTO-->
+            </ul>
+
+        </nav>
+
+        <a href="dona.html" target="_self" class="header__linkBotonDonar" title="Boton Dona"> DONAR </a>
+        <!--BOTON DONAR-->
+
+    </header>
+
+    <main>
+
+        <!--DONACIÓN-->
+        <!--Main contiene 2 secciones, la primera contiene el titulo principal más hero image. Luego viene una texto intruductivo
+    para posterior dar a presentar los métodos de pago. En la segunda sección Se encuentra un cuadro explicativo
+    de que se puede hacer con el dinero donado. -->
+
+        <section class="seccionDonacion">
+
+            <div class="seccionDonacion__contenedor">
+                <h2 class="seccionDonacion__titulo"> Donaciones: Gracias por colaborar con nosotros. </h2>
+                <!--Parte introductiva de pagina-->
+            </div>
+
+            <div class="seccionDonacion__contenedorTexto">
+
+                <p class="seccionDonacion__texto">
+                    Donar dinero a Alma Mestiza es un acto de profunda empatía y solidaridad que
+                    permite transformar <b>vidas. </b> Cada contribución, por pequeña que sea, ayuda a brindar atención
+                    médica,
+                    alimentación y un hogar seguro a animales rescatados de situaciones de abandono y maltrato. Además,
+                    su
+                    generosidad respalda programas de adopción y concientización, promoviendo un trato digno y
+                    respetuoso
+                    hacia los animales.
+                </p>
+
+                <p class="seccionDonacion__texto">
+                    Agradecemos sinceramente su apoyo, ya que sin su ayuda, nuestra misión de
+                    proporcionar una vida mejor a estos seres vulnerables sería imposible. Su donación no solo cambia la
+                    vida de los animales rescatados, sino que también inspira a otros a seguir su ejemplo, creando una
+                    comunidad más compasiva y responsable. <b> Gracias por ser parte de Alma Mestiza </b> y por hacer
+                    una diferencia
+                    significativa en la vida de aquellos que no tienen voz.
+                </p>
+            </div>
+
+            <div class="seccionDonacion__pagar">
+                <!--Métodos de pago para donar. Contiene 3 cards.-->
+
+                <div class="seccionDonacion__principal">
+
+                    <article class="seccionDonacion__contenedorPagar">
+
+                        <h3 class="seccionDonacion__tituloCard"> BIZUM </h3>
+                        <p class="seccionDonacion__parrafoCard"> Selecciona "Donar a ONG" para luego poner nuestro
+                            código 09876</p>
+
+                    </article>
+
+                    <article class="seccionDonacion__contenedorPagar">
+
+                        <h3 class="seccionDonacion__tituloCard"> PAYPAL </h3>
+                        <img src="../img/paypal-donar.webp" alt="donar paylap" class="seccionDonacion__paypal"
+                            loading="lazy">
+                    </article>
+
+                    <article class="seccionDonacion__contenedorPagar">
+
+                        <h3 class="seccionDonacion__tituloCard"> Transferencia bancaria </h3>
+                        <p class="seccionDonacion__parrafoCard"> ES00 1234 5678 9101 1121 3145 (Banco Blu) </p>
+                        <p class="seccionDonacion__parrafoCard"> Titular: Alma Mestiza </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccionQueHacer">
+            <!--Sección que explica en que se usa el dinero invertido y para que se usa. -->
+
+            <h3 class="seccionQueHacer__titulo"> ¿Qué podemos hacer con tu donativo? </h3>
+
+            <div class="seccionQueHace__total">
+
+                <div class="seccionQueHacer__contenedor">
+
+                    <article class="seccionQueHacer__contenedorCard">
+
+                        <p class="seccionQueHacer__icono"> <i class="fa-solid fa-briefcase-medical"></i> </p>
+                        <p class="seccionQueHacer__texto"> 30 €</p>
+                        <p class="seccionQueHacer__texto"> Desparasitación para cuatro animales con parásitos.</p>
+
+                    </article>
+
+                    <article class="seccionQueHacer__contenedorCard">
+
+                        <p class="seccionQueHacer__icono"> <i class="fa-solid fa-bowl-food"></i> </p>
+                        <p class="seccionQueHacer__texto"> 60 €</p>
+                        <p class="seccionQueHacer__texto"> Alimento para 2 perros durante dos meses.</p>
+
+                    </article>
+
+
+                    <article class="seccionQueHacer__contenedorCard">
+
+                        <p class="seccionQueHacer__icono"> <i class="fa-solid fa-cat"></i> </p>
+                        <p class="seccionQueHacer__texto"> 150 €</p>
+                        <p class="seccionQueHacer__texto"> Vacunación para 10 gatos por 10 meses.</p>
+
+                    </article>
+
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER DE ADOPCIÓN -->
+    <!-- Mismo footer que index. -->
+
+    <footer class="footer">
+
+
+        <div class="footer__contenedorCuerpo">
+
+            <h2 class="footer__logo"> ALMA MESTIZA </h2>
+
+            <ul class="footer__lista">
+                <li class="footer__elementoLista"> <i class="fa-solid fa-paw"></i> Adopción
+                    <ol class="footer__ExtraAdopcion">
+                        <li class="footer__elementoExtra"> <a href="adopcion.html#perros" title="footer perros"
+                                target="_self" class="footer__links"> Perros</a></li>
+                        <li class="footer__elementoExtra"> <a href="adopcion.html#gatos" title="footer gatos"
+                                target="_self" class="footer__links"> Gatos</a></li>
+                        <li class="footer__elementoExtra"> <a href="adopcion.html#abuelos" title="footer abuelitos"
+                                target="_self" class="footer__links"> Abuelitos </a></li>
+                    </ol>
+                </li>
+
+                <li class="footer__elementoLista"> <a href="../index.html#nosotros" title="footer nosotros"
+                        class="footer__links"> <i class="fa-solid fa-users"></i> Nosotros </a> </li>
+
+                <li class="footer__elementoLista"> <i class="fa-solid fa-heart"></i> Ayudanos
+
+                    <ol class="footer__ExtraAdopcion">
+                        <li class="footer__elementoExtra"> <a href="dona.html" title="footer donar" target="_self"
+                                class="footer__links"> Donar</a></li>
+                        <li class="footer__elementoExtra"> <a href="formulario.html" title="footer voluntario"
+                                target="_self" class="footer__links"> Ser voluntario</a></li>
+                        <li class="footer__elementoExtra"> <a href="formulario.html" title="footer socio" target="_self"
+                                class="footer__links"> hazte socio </a></li>
+                    </ol>
+                </li>
+                <li class="footer__elementoLista"> <a href="../index.html#formulario" title="footer contacto"
+                        class="footer__links">
+                        <i class="fa-solid fa-paper-plane"></i> Contacto </a> </li>
+
+            </ul>
+
+            <div class="footer__iconos">
+
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+
+            </div>
+
+        </div>
+
+        <div class="footer__contenedorPie">
+
+            <div class="footer__vacio"> </div>
+
+            <ul class="footer__otrasListas">
+                <li class="footer__listaPie">Todos los derechos reservados</li>
+                <li class="footer__listaPie">Aviso legar</li>
+                <li class="footer__listaPie">Privacidad</li>
+                <li class="footer__listaPie">Cookies</li>
+
+            </ul>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
