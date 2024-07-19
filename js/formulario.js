@@ -1,6 +1,6 @@
 /*Estructura:
 - Variables globales
-- Funcionpara los eventos
+- Función para los eventos
 - Funciones que ejecutan los eventos*/ 
 
 /*Variables para controlar aparición y desaparición lista adopción*/ 
@@ -48,7 +48,7 @@ function manejaEventos () {
     adopcionMovil.addEventListener('click', apareceMenuAdopcion);
     ayudarMovil.addEventListener('click',apareceMenuAyudar);
 
-    /*Con esto aparece modal una vez se haga click en boton enviar y desaparece al hacer click en boton x*/
+    /*Con esto aparece modal una vez se haga click en botón enviar y desaparece al hacer click en botón x*/
     botonCerrar.addEventListener('click', eliminaModal);
     botonForm.addEventListener('click', holaModal)
 
@@ -110,7 +110,7 @@ function muestraCortina (){
     cortina.style.width = '50%';
 
         /*Le quita la clase desaparece para que no se mantenga en la página*/
-    let dosListas = document.getElementById('listaResponsive'); //remueve clase a listas generales , AGREGAR ANIMACION 
+    let dosListas = document.getElementById('listaResponsive'); //remueve clase a listas generales 
     dosListas.classList.remove('desaparece');
 
     let botonDonarResponsive = document.getElementById('donaResponsive');//remueve clases a boton
@@ -124,10 +124,10 @@ function desapareceCortina (){
     cortina.style.width = '0';
 
           /*Permite dar una transición a las listas para que al cerra header responsive, desaparezcan de forma suave */
-    let dosListas = document.getElementById('listaResponsive'); //desaparecen las listas generales, AGREGAR ANIMACION
+    let dosListas = document.getElementById('listaResponsive'); //desaparecen las listas generales
     dosListas.classList.add('desaparece');
 
-    let botonDonarResponsive = document.getElementById('donaResponsive'); //desaparece boton donar
+    let botonDonarResponsive = document.getElementById('donaResponsive'); //desaparece botón donar
     botonDonarResponsive.classList.add('desaparece');
 }
 

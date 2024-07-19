@@ -3,7 +3,7 @@
 - Cambio en body
 - Header Cortina responsive
 - Header principal
-- Main: Secciones -> 3 secciones. una contiene el inicio, otro las card y el ultimo un link de enlace. 
+- Main: 3 secciones -> una contiene el inicio, otro las card y el último un link de enlace. 
 - Footer */
 
 @font-face {
@@ -15,9 +15,9 @@
 :root {
 
     --colorTexto: #171512;
-    /*Color del texto de pagina*/
+    /*Color del texto de página*/
     --colorfondo: #F2F2F4;
-    /*Color del fondo de pagina*/
+    /*Color del fondo de página*/
     --verde: #56763C;
     --rosado: #FFAAB1;
 }
@@ -54,7 +54,7 @@ body {
     align-items: center;
 }
 
-/*Boton X movil*/
+/*Botón X móvil*/
 .headerMovil__botonX {
 
     border: 2px solid var(--colorfondo);
@@ -74,7 +74,7 @@ body {
     background-color: var(--colorTexto);
 }
 
-/*Boton donar movil */
+/*Botón donar móvil */
 .headerMovil__linkBoton {
     color: var(--colorfondo);
     background-color: var(--colorTexto);
@@ -91,7 +91,7 @@ body {
     background-color: var(--colorfondo);
 }
 
-/*Lista movil*/
+/*Lista móvil*/
 .headerMovil__listaMovil {
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ body {
     margin: 2rem 0;
 }
 
-/*Menus desplegables movil*/
+/*Menus desplegables móvil*/
 .headerMovil__extra {
     list-style: none;
     padding: 0;
@@ -142,11 +142,11 @@ body {
 }
 
 .desaparece {
-    /*clase creada en css para transision menu*/
+    /*clase creada en css para transición menu*/
     animation: lista 1s ease-out;
 }
 
-/*Elementos de lista movil*/
+/*Elementos de lista móvil*/
 
 .headerMovil__elemLista {
     color: var(--colorfondo);
@@ -264,7 +264,7 @@ body {
     transition: 1s max-height;
 
     position: absolute;
-    /**/
+    
 }
 
 /*Menu desplegable ayuda*/
@@ -312,7 +312,7 @@ body {
     color: var(--colorTexto);
 }
 
-/*Boton donar*/
+/*Botón donar*/
 .header__linkBotonDonar {
     background-color: var(--colorTexto);
     color: var(--colorfondo);
@@ -333,7 +333,7 @@ body {
     }
 }
 
-/*Boron barra*/
+/*Botón barra*/
 
 .header__barras {
     background-color: var(--colorfondo);

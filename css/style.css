@@ -1,7 +1,7 @@
 /*CSS
 - Variables
 - Cambio en body
-- Header Cortina responsive
+- Header cortina responsive
 - Header principal
 - Main: Secciones -> carrusel de imagenes, quienes somos, adopción, pasos adopción, contacto fundación.
 - Footer */
@@ -15,9 +15,9 @@
 :root {
 
     --colorTexto: #171512;
-    /*Color del texto de pagina*/
+    /*Color del texto de página*/
     --colorfondo: #F2F2F4;
-    /*Color del fondo de pagina*/
+    /*Color del fondo de página*/
     --verde: #56763C;
     --rosado: #FFAAB1;
 }
@@ -54,7 +54,7 @@ body {
     align-items: center;
 }
 
-/*Boton X movil*/
+/*Botón X móvil*/
 .headerMovil__botonX {
 
     border: 2px solid var(--colorfondo);
@@ -74,7 +74,7 @@ body {
     background-color: var(--colorTexto);
 }
 
-/*Boton donar movil */
+/*Botón donar móvil */
 .headerMovil__linkBoton {
     color: var(--colorfondo);
     background-color: var(--colorTexto);
@@ -91,7 +91,7 @@ body {
     background-color: var(--colorfondo);
 }
 
-/*Lista movil*/
+/*Lista móvil*/
 .headerMovil__listaMovil {
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ body {
     margin: 2rem 0;
 }
 
-/*Menus desplegables movil*/
+/*Menus desplegables móvil*/
 .headerMovil__extra {
     list-style: none;
     padding: 0;
@@ -141,12 +141,12 @@ body {
 }
 
 .desaparece {
-    /*clase creada en css para transision menu*/
+    /*clase creada en css para transición menu*/
     animation: lista 1s ease-out;
 }
 
 
-/*Elementos de lista movil*/
+/*Elementos de lista móvil*/
 
 .headerMovil__elemLista {
     color: var(--colorfondo);
@@ -261,7 +261,7 @@ body {
     transition: 1s max-height;
 
     position: absolute;
-    /**/
+  
 }
 
 /*Menu desplegable ayuda*/
@@ -309,7 +309,7 @@ body {
     color: var(--colorTexto);
 }
 
-/*Boton donar*/
+/*Botón donar*/
 .header__linkBotonDonar {
     background-color: var(--colorTexto);
     color: var(--colorfondo);
@@ -330,7 +330,7 @@ body {
     }
 }
 
-/*Boron barra*/
+/*Botón barra*/
 
 .header__barras {
     background-color: var(--colorfondo);
@@ -502,8 +502,6 @@ body {
     font-size: 1.1rem;
 }
 
-
-
 /*Iconos*/
 .seccionSomos__iconos {
     display: flex;
@@ -551,7 +549,7 @@ body {
 
 /*ADOPCIÓN*/
 .seccionAdopcion__color {
-    /*Se aplica ancho, alto y color a un div vacio para estilo*/
+    /*Se aplica ancho, alto y color a un div vacío para estilo*/
     width: 100%;
     height: 0.7rem;
     background-color: var(--rosado);
@@ -570,8 +568,6 @@ body {
     }
 
 }
-
-
 
 /*Cards adopción*/
 .seccionAdopcion__conetendorCards {
@@ -751,7 +747,7 @@ body {
     font-size: 1.4rem;
 }
 
-/*Boton saber más*/
+/*Botón saber más*/
 .seccionPasos__boton {
     text-align: center;
     background-color: var(--colorTexto);
@@ -866,23 +862,6 @@ body {
     cursor: pointer;
 }
 
-/*animación para que aparezca agradecimiento  PREGUNTAR A JAVI PORQUE SUBE A LA PAGINA AL PONER ENVIAR 
-PREGUNTAR A JAVI PARA QUE APAREZCA BIEN Y CUADRO NO CREZCA*/
-@keyframes aparicion {
-
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(-10px);
-    }
-
-
-}
-
 .seccionContacto__volver {
     /*Anclaje para volver a navegador*/
     font-weight: bold;
@@ -972,10 +951,8 @@ PREGUNTAR A JAVI PARA QUE APAREZCA BIEN Y CUADRO NO CREZCA*/
         justify-content: space-around;
         margin: 0 0 0.7rem 0;
         width: 100%;
-
     }
 }
-
 
 /*Segundo div*/
 

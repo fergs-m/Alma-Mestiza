@@ -1,6 +1,6 @@
 /*Estructura:
 - Variables globales
-- Funcionpara los eventos
+- Función para los eventos
 - Funciones que ejecutan los eventos*/ 
 
 /*Variables para controlar aparición y desaparición lista adopción*/ 
@@ -18,7 +18,7 @@ let adopcionMovil = document.getElementById('adopcionCortina');
 let ayudarMovil = document.getElementById('ayudarCortina');
 
 /*Array carrusel y variables*/
-let carruselImg = ['img/adopcion2.webp', 'img/dona.webp', 'img/voluntario.webp'];
+let carruselImg = ['img/nueva-adopcion.webp', 'img/nueva-dona.webp', 'img/nueva-voluntario.webp'];
 
 let lugar = 0;
 let botonDerecha = document.getElementById('flechaDer');
@@ -116,10 +116,10 @@ function muestraCortina (){
     cortina.style.width = '50%';
 
         /*Le quita la clase desaparece para que no se mantenga en la página*/
-    let dosListas = document.getElementById('listaResponsive'); //remueve clase a listas generales , AGREGAR ANIMACION 
+    let dosListas = document.getElementById('listaResponsive'); //remueve la clase a las listas generales. 
     dosListas.classList.remove('desaparece');
 
-    let botonDonarResponsive = document.getElementById('donaResponsive');//remueve clases a boton
+    let botonDonarResponsive = document.getElementById('donaResponsive');//remueve clases a botón
     botonDonarResponsive.classList.remove('desaparece');
 }
 
@@ -130,10 +130,10 @@ function desapareceCortina (){
     cortina.style.width = '0';
 
           /*Permite dar una transición a las listas para que al cerra header responsive, desaparezcan de forma suave */
-    let dosListas = document.getElementById('listaResponsive'); //desaparecen las listas generales, AGREGAR ANIMACION
+    let dosListas = document.getElementById('listaResponsive'); //desaparecen las listas generales.
     dosListas.classList.add('desaparece');
 
-    let botonDonarResponsive = document.getElementById('donaResponsive'); //desaparece boton donar
+    let botonDonarResponsive = document.getElementById('donaResponsive'); //desaparece botón donar por animación 
     botonDonarResponsive.classList.add('desaparece');
 }
 
@@ -152,11 +152,11 @@ function apareceMenuAyudar(){
 }
 
 
-/*Mueve carrusel de imagenes hacoa adelante*/
+/*Mueve carrusel de imagenes hacia adelante*/
 function siguenteImagen (){
 
     lugar = lugar + 1 ;
-    if (lugar == 3) {   //cuando lugar sea igual a 3 debe volver a la posicion 0
+    if (lugar == 3) {   //cuando lugar sea igual a 3 debe volver a la posición 0
        
         lugar = 0;
     }
@@ -168,7 +168,7 @@ function siguenteImagen (){
 /*Mueve carrusel de imagenes hacia atrás*/
 function imagenAntes (){
 
-    lugar = lugar - 1 ; //cuando lugar sea igual a -1 debe volver a la posicion 2
+    lugar = lugar - 1 ; //cuando lugar sea igual a -1 debe volver a la posición 2
     if (lugar == -1) {  
  
         lugar = 2;

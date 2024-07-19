@@ -1,6 +1,6 @@
 /*Estructura:
 - Variables globales
-- Funcion para los eventos
+- Función para los eventos
 - Funciones que ejecutan los eventos*/ 
 
 /*Variables para controlar aparición y desaparición lista adopción*/ 
@@ -18,7 +18,7 @@ let adopcionMovil = document.getElementById('adopcionCortina');
 let ayudarMovil = document.getElementById('ayudarCortina');
 
 /* ARRAY DE OBJETOS*/
-/*Son 2 array de objetos que contienen la información de las diferentes cardS. Cada for genera la estructura de 
+/*Son 2 array de objetos que contienen la información de las diferentes cards. Cada for genera la estructura de 
 un div que contiene dos article, el primero para la imagen y el segundo para el texto, cada uno va asociado
 a su respectivo div con id que esta en html*/
 let arrayPerros = [
@@ -230,7 +230,6 @@ function manejaEventos () {
     adopcionMovil.addEventListener('click', apareceMenuAdopcion);
     ayudarMovil.addEventListener('click',apareceMenuAyudar);
     
-
 }
 
 //Funciones aparece y desaparece lista adopción 
@@ -286,10 +285,10 @@ function muestraCortina (){
     cortina.style.width = '50%';
 
         /*Le quita la clase desaparece para que no se mantenga en la página*/
-    let dosListas = document.getElementById('listaResponsive'); //remueve clase a listas generales , AGREGAR ANIMACION 
+    let dosListas = document.getElementById('listaResponsive'); //remueve clase a listas generales 
     dosListas.classList.remove('desaparece');
 
-    let botonDonarResponsive = document.getElementById('donaResponsive');//remueve clases a boton
+    let botonDonarResponsive = document.getElementById('donaResponsive');//remueve clases a botón
     botonDonarResponsive.classList.remove('desaparece');
 }
 
@@ -300,10 +299,10 @@ function desapareceCortina (){
     cortina.style.width = '0';
 
           /*Permite dar una transición a las listas para que al cerra header responsive, desaparezcan de forma suave */
-    let dosListas = document.getElementById('listaResponsive'); //desaparecen las listas generales, AGREGAR ANIMACION
+    let dosListas = document.getElementById('listaResponsive'); //desaparecen las listas generales
     dosListas.classList.add('desaparece');
 
-    let botonDonarResponsive = document.getElementById('donaResponsive'); //desaparece boton donar
+    let botonDonarResponsive = document.getElementById('donaResponsive'); //desaparece botón donar
     botonDonarResponsive.classList.add('desaparece');
 }
 
