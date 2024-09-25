@@ -1,0 +1,1 @@
+Este es el proyecto creado con HTML, CSS y JavaScript con el cual aprové el módulo de diseño web en CEI. Es una página para una protectora de animales que muestra animales en adopción, el team que conforma la fundación, recaudación de donaciones y poder ser voluntario. Échale un vistazo! 
